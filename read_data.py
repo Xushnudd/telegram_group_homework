@@ -10,4 +10,7 @@ def read_data(file_path: str)->dict:
     
     """
     #open file
-    return
+    f = open(file_path, "r")
+    p = json.loads(f.read())
+    return p
+#print(read_data("data/result.json"))
